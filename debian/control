@@ -1,0 +1,14 @@
+Source: corecluster
+Section: contrib
+Priority: extra
+Maintainer: Marta Nabozny <martastrzet@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), dh-systemd
+Standards-Version: 3.9.4
+Homepage: http://cloudover.org/corecluster/
+
+Package: corecluster
+Architecture: all
+Depends: corenetwork, corosync, libvirt-bin, nfs-common, nginx-extras, ntpdate, openssh-server, python-dev, python-libvirt, python-pip, quagga, redis-server, qemu-utils, sqlite3, sudo, uwsgi, uwsgi-plugin-python
+Conflicts: overcluster-core
+Description: Core package of OverCluster
+ This package contains core components to run basic version of OverCluster.
