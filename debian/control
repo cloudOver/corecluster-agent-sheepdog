@@ -1,4 +1,4 @@
-Source: corecluster-sheepdog
+Source: corecluster-storage-sheepdog
 Section: contrib
 Priority: extra
 Maintainer: Maciej Nabozny <maciej.nabozny@cloudover.io>
@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 8.0.0), dh-systemd
 Standards-Version: 3.9.4
 Homepage: http://cloudover.org/corecluster/
 
-Package: corecluster-sheepdog
+Package: corecluster-storage-sheepdog
 Architecture: all
 Depends: corenetwork, sheepdog, ntpdate
 Description: Sheepdog for CoreCluster
