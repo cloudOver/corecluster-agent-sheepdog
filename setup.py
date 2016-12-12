@@ -10,7 +10,7 @@ def version():
 setup(
   name = 'corecluster-storage-sheepdog',
   packages = find_packages(exclude=['config', 'config.*']),
-  version = '16.11.01',
+  version = '16.12.01',
   description = 'CloudOver core IaaS system',
   author = 'Marta Nabozny',
   author_email = 'marta.nabozny@cloudover.io',
