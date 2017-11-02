@@ -91,8 +91,9 @@ class AgentThread(BaseAgent):
                 log(msg='End of data', context=task.logger_ctx, tags=('agent', 'image', 'info'))
                 break
             try:
-                p = subprocess.Popen(['dog', 'vdi', 'write', str(bytes)], stdin=subprocess.PIPE)
+                p = subprocess.Popen(['dog', 'vdi', 'write', image.libvirt_name + '_tmp', str(bytes)], stdin=subprocess.PIPE)
                 p.stdin.write(data)
+                p.stdin.close()
                 p.wait()
             except Exception as e:
                 log(msg='Failed to finish download at %d bytes' % bytes, exception=e, context=task.logger_ctx, tags=('agent', 'image', 'error'))

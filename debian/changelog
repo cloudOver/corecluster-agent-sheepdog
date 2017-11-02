@@ -1,3 +1,10 @@
+corecluster-storage-sheepdog (16.11.01) stable; urgency=low
+
+  * Fixed Sheepdog bug
+
+ -- Maciej Nabozny <maciej.nabozny@cloudover.io> 02 Nov 2017 10:00:00 +0200
+
+
 corecluster-storage-sheepdog (16.04.01) stable; urgency=low
 
   * GNU AGPL v3 License
