@@ -8,7 +8,7 @@ Homepage: http://cloudover.org/corecluster/
 
 Package: corecluster-storage-sheepdog
 Architecture: all
-Depends: corenetwork, sheepdog, ntpdate
+Depends: corenetwork, sheepdog, ntpdate, wakeonlan
 Description: Sheepdog for CoreCluster
  This package contains drivers and agents for CoreCluster to support
  sheepdog distributed storage.
