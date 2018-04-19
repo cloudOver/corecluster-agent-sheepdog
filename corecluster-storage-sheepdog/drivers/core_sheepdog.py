@@ -34,7 +34,7 @@ import time
 
 class Driver(DefaultNodeDriver):
     def _sheepdog_startup(self):
-        for i in xrange(30):
+        for i in range(30):
             r = system.call('dog node list', shell=True)
             if r == 0:
                 break
